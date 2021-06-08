@@ -14,7 +14,6 @@ all_prices = [price.getText().strip() for price in soup.find_all(name="span", cl
 all_urls = [url["href"] for url in soup.find_all(name="a", class_="js-item-title")]
 
 # Autofill the data in Google Sheet
-
 chrome_driver_path = "C://Program Files (x86)/chromedriver.exe"
 driver = webdriver.Chrome(chrome_driver_path)
 
